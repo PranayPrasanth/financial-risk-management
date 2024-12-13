@@ -1,0 +1,27 @@
+Justification for using Parametric Approach
+
+1. Normal Distribution of Returns:
+The Shapiro-Wilk test results show that the returns of the stock are normally distributed with a high p-value (0.6848), meaning there is no significant deviation from normality. Since the parametric VaR approach assumes that the underlying returns are normally distributed, this test result supports the use of the parametric method.
+2. Simplicity and Computational Efficiency:
+The parametric VaR method is one of the simplest and most computationally efficient techniques to calculate risk. By using the mean and standard deviation of returns, it avoids the complexity of more advanced techniques (such as Monte Carlo simulation or historical simulation). This makes it particularly useful when dealing with large datasets, and where the returns are approximately normally distributed, as is the case here.
+3. Theoretical Foundation:
+The parametric VaR method is grounded in statistical theory, specifically under the assumption that financial returns are normally distributed. Since your returns passed the Shapiro-Wilk normality test, the theoretical assumption holds true, making the parametric approach an appropriate method for calculating risk in this scenario.
+4. Risk Estimation:
+The parametric approach provides an estimate of potential loss based on the mean, standard deviation, and the confidence level. These are key parameters in risk management, and the parametric method allows for a straightforward estimation of the risk of an asset or portfolio in normal market conditions. Given the normality of the returns, this method produces an accurate risk measure.
+5. Interpretation of VaR:
+The parametric VaR can be easily interpreted and is widely understood by risk managers. The calculation of VaR based on a normal distribution allows for an intuitive understanding of risk—specifically, the potential loss in the worst case scenario at a given confidence level. For example, at a 95% confidence level, the VaR tells us the amount we could lose with a 95% probability over a given time horizon. This helps investors assess their risk tolerance and make informed decisions.
+6. Industry Standard:
+The parametric VaR is an industry-standard risk measure used by financial institutions and corporations globally. It is well-established in the field of risk management and regulatory frameworks. Therefore, using this approach makes the analysis comparable with widely accepted practices in the industry.
+7. Data-Driven Decision-Making:
+The parametric VaR method uses historical data (mean and standard deviation) to estimate future risk. With reliable data, this method provides a quantitative measure of potential losses that is based on real-world performance, aiding in data-driven decision-making for portfolio management.
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Standard Deviation (7%): The stock's returns fluctuate by 7%. For an investment of 100,000, this means the investor can expect the value of the portfolio to vary by about 7,000 up or down on average in a given period (one month). This reflects the volatility of the stock's returns.
+
+Parametric VaR (-12%): With 95% confidence, the investor may face a loss greater than 12% of the portfolio value. For an investment of 100,000, this equates to a potential loss of 12,000. This represents the worst loss the investor can expect under normal market conditions, with a 95% probability.
+
+Parametric Expected Shortfall (13%): In the worst 5% of scenarios (i.e., extreme events), the investor could face an average loss of 13% of their capital. This corresponds to a loss of 13,000. This measure is useful to understand the severity of the potential worst-case scenarios beyond the VaR.
+
+EWMA Volatility (8.02%): The recent short-term volatility is 8.02%, meaning that, over the recent period, the portfolio could fluctuate by 8,020 in value, indicating that the stock has had relatively high price movements recently
