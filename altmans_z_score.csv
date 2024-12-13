@@ -1,0 +1,8 @@
+Component,Value,Notes,Calculation
+Working Capital,-517,Current Assets - Current Liabilities, 1794-2311
+Total Assets(TA),10864,Non-Current Assets + Current Assets, 9070+1794
+Retained Earnings(RE),20447,Equity section of Balance Sheet
+EBIT,1794,Provided as Benchmark EBIT(from income statement)
+MVE,2571156,Stock price * outstanding shares,2660*966.6
+Book Value of Total Liabilities,6900, Current Liabilities + Non-Current Liabilities,2311+4589
+Sales,6619,Total Revenue

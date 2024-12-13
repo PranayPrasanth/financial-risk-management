@@ -54,17 +54,3 @@ else:
     ES_95_value = ES_95.values[0]
     print(f"Parametric Expected Shortfall (95% Confidence): {ES_95_value:.2f}")
 
-    # # Calculate Beta (Ensure that both stock and index returns have enough variation)
-    #
-    # cov_matrix = np.cov(stock_returns, index_returns)  # Covariance matrix of stock and market
-    # beta = cov_matrix[0, 1] / cov_matrix[1, 1]  # Beta = covariance(stock, market) / variance(market)
-    # print(f"Beta: {beta:.2f}")
-
-    # # Calculate Sharpe Ratio
-    # # Calculate the expected return (mean) of the stock
-    # expected_return = stock_returns.mean() * 252  # Annualized return (assuming 252 trading days in a year)
-    # # Calculate the standard deviation (volatility) of the stock
-    # std_dev = stock_returns.std() * np.sqrt(252)  # Annualized standard deviation (volatility)
-    # # Sharpe Ratio formula
-    # sharpe_ratio = (expected_return - risk_free_rate) / std_dev
-    # print(f"Sharpe Ratio: {sharpe_ratio:.4f}")
