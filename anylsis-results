@@ -36,20 +36,46 @@ The parametric VaR method uses historical data (mean and standard deviation) to 
 
 
 ------------------------------------------------------------------------------------------------------------------------
-Standard Deviation (7%): The stock's returns fluctuate by 7%. For an investment of 100,000, this means the investor can
- expect the value of the portfolio to vary by about 7,000 up or down on average in a given period (one month). This
-  reflects the volatility of the stock's returns.
 
-Parametric VaR (-12%): With 95% confidence, the investor may face a loss greater than 12% of the portfolio value. For an
- investment of 100,000, this equates to a potential loss of 12,000. This represents the worst loss the investor can
-  expect under normal market conditions, with a 95% probability.
+Mean Return:
 
-Parametric Expected Shortfall (13%): In the worst 5% of scenarios (i.e., extreme events), the investor could face an
- average loss of 13% of their capital. This corresponds to a loss of 13,000. This measure is useful to understand the
-  severity of the potential worst-case scenarios beyond the VaR.
+This is the average return of the stock over the given period. In your case, it's 1.27%, which represents the average
+ monthly return of the stock.
+Standard Deviation:
 
-EWMA Volatility (8.02%): The recent short-term volatility is 8.02%, meaning that, over the recent period, the portfolio
-could fluctuate by 8,020 in value, indicating that the stock has had relatively high price movements recently.
+The standard deviation of the returns is 0.07, which represents the volatility of the stock. A lower value indicates
+ less variation in the stock's price changes over the period.
+Parametric VaR (95% Confidence):
+
+The Value at Risk (VaR) is 0.13, meaning there's a 95% confidence that the stock will not lose more than 0.13 (or 13%)
+ of its value in a given month based on historical data.
+Parametric Expected Shortfall (ES) (95% Confidence):
+
+The Expected Shortfall (ES) is -0.14, meaning that in the worst 5% of cases, the average loss could be 14% of the
+ stock's value. ES provides a deeper understanding of potential extreme losses beyond the VaR.
+Beta:
+
+Beta is 0.76, indicating that the stock is less volatile than the market (since the market beta is typically 1).
+This suggests that the stock tends to move with less volatility compared to the broader index.
+
+The latest EWMA (Exponentially Weighted Moving Average) volatility estimate of 0.0802 indicates the most recent
+estimate of the asset's volatility, with more weight given to recent data. This value reflects the asset's risk based
+on recent price movements, using an exponentially decaying weighting scheme. The volatility estimate can be used for
+risk management, such as in calculating Value-at-Risk (VaR) and adjusting portfolio allocations based on the latest
+risk levels.
+
+
+The Liquidity-Adjusted VaR (95% Confidence) of 0.15 indicates the potential loss, considering both market risk and
+ liquidity risk, at a 95% confidence level over the given time horizon.
+
+The Average Bid-Ask Spread of 343.86 represents the average difference between the buying and selling price for the
+ asset, providing a measure of its liquidity.
+
+The Liquidity Multiplier of 0.11 reflects the impact of liquidity on the asset's overall risk. A higher liquidity
+multiplier would indicate a greater impact of liquidity risk, while a lower multiplier suggests a smaller effect.
+The multiplier suggests that liquidity risk is contributing modestly to the overall risk of the asset.
+
+
 
 ------------------------------------------------------------------------------------------------------------------------
 
@@ -91,3 +117,4 @@ credit risk assessment, especially when evaluating companies’ financial health
 
 
 
+Liquidity VAR = VAR +
